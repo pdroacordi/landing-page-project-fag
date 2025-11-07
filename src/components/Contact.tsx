@@ -62,7 +62,7 @@ const Contact: React.FC = () => {
           ${formData.message}
         `,
         sender: {
-          email: 'paasoares@minha.fag.edu.br',
+          email: SENDER_EMAIL,
           name: 'Website Escritório Contábil Acordi',
         },
         replyTo: {

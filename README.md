@@ -1,6 +1,8 @@
 # Landing Page Project - React + TypeScript + Vite
 
-A modern, secure landing page with contact form integration using Brevo API for email delivery.
+A modern, responsive landing page built with React, TypeScript, and Vite, featuring a secure contact form integration using Brevo API for email delivery. This project is live and deployed on [Vercel](https://vercel.com).
+
+🌐 **Live Demo**: [Visit the Website](https://your-project-url.vercel.app)
 
 ## Features
 
@@ -115,14 +117,23 @@ lp-project/
 │   └── send-email.ts          # Serverless API endpoint for email
 ├── src/
 │   ├── components/            # React components
-│   │   ├── Contact.tsx        # Contact form component
-│   │   └── ...
-│   ├── App.tsx
-│   └── main.tsx
-├── .env.example               # Environment variables template
-├── .gitignore                 # Git ignore rules
-├── vercel.json                # Vercel configuration
-└── package.json
+│   │   ├── Contact.tsx        # Contact form with Brevo integration
+│   │   ├── Footer.tsx        # Footer component
+│   │   ├── Header.tsx        # Navigation header
+│   │   ├── Hero.tsx          # Hero section component
+│   │   ├── Pricing.tsx       # Pricing section
+│   │   ├── Solution.tsx      # Solutions showcase
+│   │   └── Testimonials.tsx  # Customer testimonials
+│   ├── services/
+│   │   └── emailService.ts    # Email service integration
+│   ├── types/
+│   │   └── email.ts          # TypeScript types for email
+│   ├── App.tsx               # Main application component
+│   └── main.tsx             # Application entry point
+├── .env                      # Environment variables (not in git)
+├── tsconfig.json            # TypeScript configuration
+├── vite.config.ts          # Vite configuration
+└── package.json            # Project dependencies and scripts
 ```
 
 ## API Documentation
