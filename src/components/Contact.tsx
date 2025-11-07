@@ -3,7 +3,7 @@ import './Contact.css';
 import { sendEmail, EmailApiError } from '../services/emailService';
 import type { EmailRequest } from '../types/email';
 
-const SENDER_EMAIL = import.meta.env.SENDER_EMAIL || '';
+const SENDER_EMAIL = import.meta.env.VITE_SENDER_EMAIL || '';
 
 interface FormStatus {
   type: 'idle' | 'loading' | 'success' | 'error';
